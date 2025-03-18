@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>TASK Salary Growth Calculator 📈</h1>
+
+        <div class="card">
+            <h2>Enter Your Details</h2>
+            <div class="input-group">
+                <label>💼 Current Salary:</label>
+                <input type="number" id="currentSalary" placeholder="Enter your salary">
+            </div>
+            <div class="input-group">
+                <label>📅 Service Years:</label>
+                <input type="number" id="serviceYears" placeholder="Years until retirement">
+            </div>
+            <div class="input-group">
+                <label>📊 Annual Hike %:</label>
+                <input type="number" id="hikePercentage" value="10">
+            </div>
+            <button id="calculateBtn">📌 Calculate Salary Growth</button>
+        </div>
+
+        <section class="recalculate">
+            <h2>📅 Yearly Salary Growth</h2>
+            <div class="table-container">
+                <table id="salaryTable">
+                    <thead>
+                        <tr>
+                            <th>Year</th>
+                            <th>Salary (₹)</th>
+                            <th>Total Yearly Earnings (₹)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Data will be inserted here -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
